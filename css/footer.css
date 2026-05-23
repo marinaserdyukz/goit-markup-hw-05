@@ -75,3 +75,66 @@ font-weight: 500;
     background-color: #31D0AA;
 }
 
+.footer-subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.subscription {
+    color: #ffffff;
+font-weight: 500;
+}
+
+.subscription-wrapper {
+display: flex;
+gap: 24px;
+}
+
+.subscription-input {
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    height: 40px;
+    width: 264px;
+}
+
+.subscription-input:focus {
+    outline: none;
+    border-color: #31D0AA;
+}
+
+
+input::placeholder {
+    color: #ffffff;
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.16667;
+letter-spacing: 0.04em;
+padding: 8px 16px;;
+}
+
+
+.subscription-button {
+    background-color: #4D5AE5;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #F4F4FD;
+border-radius: 4px;
+border: none;
+max-width: 165px;
+}
+
+.subscription-button:hover,
+.subscription-button:focus {
+    background-color: #31D0AA;
+    cursor: pointer;
+}
+
+.subscription-icon {
+    margin-left: 8px;
+    fill: #F4F4FD;
+}
