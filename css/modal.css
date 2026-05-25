@@ -30,7 +30,7 @@
     max-width: 408px;
     max-height: 584px;
     overflow-y: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 display: flex;
 flex-direction: column;
 gap: 16px;
@@ -65,14 +65,17 @@ transition: background-color 250ms ease, fill 250ms ease;
 
 } 
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-    fill: #fff;
-}
+
 
 .modal-close-button:hover,
 .modal-close-button:focus {
     background-color: #404bbf;
+  
+}
+
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
+    fill: #fff;
 }
 
 
