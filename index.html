@@ -395,22 +395,23 @@
     <p class="subscription">Subscribe</p>
     <form class="subscription-form">
         <div class="subscription-wrapper">
-        <input type="email" class="subscription-input" placeholder="Email" required>
+        <input type="email" name="email" class="subscription-input" placeholder="E-mail" required>
         <button type="submit" class="subscription-button">
             Subscribe
-            <svg class="subscription-icon" width="16" height="16">
+            <svg class="subscription-icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
             </svg>
-
         </button>
+        </div>
+    </form>
 </div>
-</div>
+
 
 </div>
     </footer>
 
-<div class="modal-overlay is-open">
-    <div class="modal">
+<div id="modal-overlay" class="modal-overlay is-open">
+    <div id="modal" class="modal">
         <div class="modal-header">
         <button type="button" class="modal-close-button">
             <svg class="modal-close-icon" width="8" height="8">

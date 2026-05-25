@@ -67,7 +67,7 @@ font-weight: 500;
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
-    transition: background-color 0.3s ease;
+    transition: background-color 250ms ease;
 }
 
 .social-icon-link:hover,
@@ -90,6 +90,8 @@ font-weight: 500;
 .subscription-wrapper {
 display: flex;
 gap: 24px;
+flex-direction: row;
+
 }
 
 .subscription-input {
@@ -98,7 +100,15 @@ gap: 24px;
     border-radius: 4px;
     height: 40px;
     width: 264px;
+padding: 8px 16px;
+    color: #ffffff;
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
 }
+
+
 
 .subscription-input:focus {
     outline: none;
@@ -107,12 +117,12 @@ gap: 24px;
 
 
 input::placeholder {
-    color: #ffffff;
+    color: #fff;
     font-weight: 400;
 font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
-padding: 8px 16px;;
+
 }
 
 
@@ -126,6 +136,8 @@ color: #F4F4FD;
 border-radius: 4px;
 border: none;
 max-width: 165px;
+
+transition: background-color 250ms ease;
 }
 
 .subscription-button:hover,
