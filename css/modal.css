@@ -1,5 +1,5 @@
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+.backdrop {
+    background-color: rgba(46, 47, 66, 0.4);
 
     position: fixed;
     top: 0;
@@ -13,16 +13,18 @@
 
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
     transition: opacity 250ms ease;
 }
 
-.modal-overlay.is-open {
+.backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
 }
 
 .modal {
-    background-color: #fff;
+    background-color: #fcfcfc;
     padding:24px;
     border-radius: 4px;
     max-width: 408px;
@@ -46,18 +48,33 @@ gap: 16px;
 } 
 
 .modal-close-button {
-border: 1px solid #2E2F42;
+border: 1px solid rgba(46, 47, 66, 0.40);
 border-radius: 24px;
 width: 24px;
 height: 24px;
 margin-left: auto;
+background-color: #e7e9fc;
+
+transition: background-color 250ms ease, fill 250ms ease;
 }
 
 .modal-close-icon {
   display: block;
-    margin: 0 auto;
+    margin: auto;
+    fill: #2e2f42;
 
+} 
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+    fill: #fff;
 }
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+    background-color: #404bbf;
+}
+
 
 .modal-title {
     font-weight: 500;
@@ -78,7 +95,7 @@ color: #8E8F99;
 
 .modal-input {
 position: relative;
-    padding-left: 32px;
+    padding-left: 38px;
 }
 
 .modal-icon {
