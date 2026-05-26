@@ -55,13 +55,15 @@ height: 24px;
 margin-left: auto;
 background-color: #e7e9fc;
 
-transition: background-color 250ms ease, fill 250ms ease;
+transition: background-color 250ms ease;
 }
 
 .modal-close-icon {
   display: block;
     margin: auto;
     fill: #2e2f42;
+
+    transition: fill 250ms ease;
 
 } 
 
@@ -97,15 +99,31 @@ color: #8E8F99;
 }
 
 .modal-input {
-position: relative;
     padding-left: 38px;
+    width: 100%;
+    max-width: 360px;
+min-height: 40px;
+border: 1px solid #2E2F42;
+border-radius: 4px;
+
+transition: border-color 250ms ease;
+}
+
+.modal-input:focus,
+.modal-input:hover {
+    border-color: #4D5AE5;
+    fill: #4D5AE5;
+}
+
+.modal-input-wrapper {
+    position: relative;
 }
 
 .modal-icon {
-position: relative;
+position: absolute;
     top: 50%;
-    left: 8px;
-    transform: translateY(-150%);
+    left: 16px;
+    transform: translateY(-50%);
 }
 
 .modal-textarea {
@@ -115,6 +133,10 @@ line-height: 1.16667;
 letter-spacing: 0.04em;
 width: 360px;
 height: 120px;
+resize: none;
+border: 1px solid #2E2F42;
+border-radius: 4px;
+padding: 8px 16px;
 }
 
 .modal-privacy-text {
@@ -140,6 +162,7 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 border: none;
 cursor: pointer;
+transition: background-color 250ms ease;
 }
 
 
@@ -160,3 +183,41 @@ position: relative;
     left: 8px;
     transform: translateX(-280%);;
 }
+
+.modal-privacy-link {
+    color: #4D5AE5;
+    text-decoration: none;
+}
+
+.modal-privacy-checkbox {
+    border-radius: 2px;
+border: 1px solid #2E2F42;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-checkbox-box {
+ width: 16px;
+    height: 16px;
+    border: 1px solid #2E2F42;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: transparent;
+
+    transition:
+        background-color 250ms ease,
+        border-color 250ms ease,
+        fill 250ms ease;
+}
+
+.modal-privacy {
+    display: flex;
+    align-items: center;
+
+}
+
