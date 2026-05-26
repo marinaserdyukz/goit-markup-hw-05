@@ -209,8 +209,8 @@ transition: background-color 250ms ease;
 
 .modal-privacy-icon {
     position: absolute;
-    top: 50%;
-    left: 8px;
+    top: 25%;
+    left: 50%;
 transform: translateX(-50%);
     
 opacity: 0;
@@ -247,7 +247,6 @@ opacity: 0;
     transition:
         background-color 250ms ease,
         border-color 250ms ease,
-        fill 250ms ease;
 }
 
 .modal-privacy-checkbox:checked + .modal-privacy-label .modal-checkbox-box {
