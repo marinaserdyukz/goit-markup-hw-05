@@ -63,7 +63,7 @@ transition: background-color 250ms ease;
     margin: auto;
     fill: currentColor;
 
-    transition: fill 250ms ease;
+    transition: color 250ms ease;
 
 } 
 
@@ -246,7 +246,7 @@ opacity: 0;
 
     transition:
         background-color 250ms ease,
-        border-color 250ms ease,
+        border-color 250ms ease;
 }
 
 .modal-privacy-checkbox:checked + .modal-privacy-label .modal-checkbox-box {
